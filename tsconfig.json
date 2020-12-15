@@ -7,7 +7,9 @@
     "allowJs": true,
     "checkJs": true,
     "noEmit": true,
-    "strict": true
+    "strict": true,
+    "declarationDir": "types",
+    "declaration": true
   },
   "include": ["src/**/*.js", "src/**/*.d.ts"],
   "exclude": ["node_modules"]

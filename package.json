@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "./src/jsdoc-typing.js",
-  "types": "./types/src/jsdoc-typing.d.ts",
+  "types": "./types/jsdoc-typing.d.ts",
   "engines": {
     "node": ">=15.0.0"
   },
@@ -12,10 +12,10 @@
     "types"
   ],
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "scripts": {
-    "build": "rm -rf types && tsc && cp src/*.d.ts types",
+    "build": "rm -rf types/* && tsc  --noEmit false --emitDeclarationOnly true && cp src/*.d.ts types",
     "test": "tsc",
     "start": "node src/jsdoc-typing.js"
   },

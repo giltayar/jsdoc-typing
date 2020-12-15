@@ -73,5 +73,6 @@ function move(point, dx, dy) {
 console.log(move({x: 2, y: 4}, 1, 1))
 
 module.exports = {
-  add
+  add,
+  mapValues
 }
