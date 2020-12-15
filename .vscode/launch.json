@@ -5,22 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "node",
+      "type": "pwa-node",
       "request": "launch",
-      "name": "Mocha Tests",
-      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
-      "args": [
-        "--no-timeouts",
-        "--exit",
-        "test/**/*.test.js"
+      "name": "Launch Program",
+      "skipFiles": [
+        "<node_internals>/**"
       ],
-      "env": {
-        "SOMEENV": "somevalue"
-      },
-      "cwd": "${workspaceRoot}",
-      "protocol": "inspector",
-      "console": "integratedTerminal",
-      "showAsyncStacks": true
+      "program": "${workspaceFolder}/src/jsdoc-typing.js"
     }
   ]
 }

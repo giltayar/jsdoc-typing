@@ -2,8 +2,6 @@
   "name": "jsdoc-typing-example",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
-  "exports": "./src/jsdoc-typing.js",
   "main": "./src/jsdoc-typing.js",
   "types": "./types/src/jsdoc-typing.d.ts",
   "engines": {
@@ -18,7 +16,8 @@
   },
   "scripts": {
     "build": "rm -rf types && tsc && cp src/*.d.ts types",
-    "test": "tsc"
+    "test": "tsc",
+    "start": "node src/jsdoc-typing.js"
   },
   "keywords": [
     "jsdoc",
@@ -33,12 +32,16 @@
     "directory": "packages/jsdoc-typing",
     "type": "git"
   },
-  "dependencies": {},
   "devDependencies": {
-    "@types/node": "^14.14.11",
     "chai": "^4.2.0",
     "chai-subset": "^1.6.0",
     "npm-run-all": "^4.1.5",
     "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "@sindresorhus/slugify": "^1.1.0",
+    "@types/lodash": "^4.14.165",
+    "flowers": "^1.1.0",
+    "lodash": "^4.17.20"
   }
 }
