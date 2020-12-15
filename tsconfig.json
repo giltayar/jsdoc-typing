@@ -2,7 +2,7 @@
   "compilerOptions": {
     "lib": ["es2020", "DOM"],
     "moduleResolution": "node",
-    "module": "esnext",
+    "module": "CommonJS",
     "resolveJsonModule": true,
     "allowJs": true,
     "checkJs": true,
